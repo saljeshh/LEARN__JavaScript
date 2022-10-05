@@ -1,0 +1,19 @@
+# problem : In an array of GPs Coordinates, find the two nearest points
+
+
+# how to fail at problem solving: 
+
+1. Jump at the problem without much thinking.
+2. Implementing solution in an unstructured way.
+3. Getting stressed out when things dont works.
+4. Being proud to research the solution and not solving in own
+
+# how to solve problem
+
+1. Stay calm and slow down, don't just jump at problem without plan
+2. Take a very logical and rational approach( programming is just logic, in the end )
+3. Follow these 4 Steps
+    - Make sure you 100% understand the problem. ask right qn to get a clear   picture.
+    - Divide and conquer the problem
+    - Don't be afraid to do as much research as you have to .. first do yourself, if you cant go stackoverflow
+    - For bigger problem , write pseudo-code before writing the actual code

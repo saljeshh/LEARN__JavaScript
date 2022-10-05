@@ -1,0 +1,10 @@
+
+// how to fail to code
+1. No clear goal 
+2. He started by watching courses and reading tutorials, but he would just copy the code without caring how it works.
+3. He didn't reinforce what he was learning by doing small challenges or taking notes.
+4. He didn't practise coding, and didn't come up with his own project ideas.
+5. He quickly became frustrated when his code was not perfectly clean or efficient.
+5. He lost motivation because he thought he could never know everything.
+6. He was learing in isolation.
+7. After finishing couple of courses, he thought he know everthing and start applying for job but he could'nt even bulid his own apps.   
