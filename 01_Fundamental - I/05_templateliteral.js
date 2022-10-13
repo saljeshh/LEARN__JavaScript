@@ -11,7 +11,7 @@ const hero =
   ' ' +
   (Year - birthYear) +
   ' ' +
-  'years old and im a ' +
+  -'years old and im a ' +
   ' ' +
   job +
   ' !! ';
