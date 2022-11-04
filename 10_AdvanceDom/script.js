@@ -1,0 +1,64 @@
+'use strict';
+
+///////////////////////////////////////
+// Modal window
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener('click', openModal);
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
+
+// project
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', (e) => {
+  const s1coords = section1.getBoundingClientRect();
+  console.log(s1coords);
+
+  console.log(e.target.getBoundingClientRect());
+  console.log('Current scroll (X/Y)', scrollX, scrollY);
+
+  // how much we see if we are seeing in small window it is small number
+  console.log(
+    document.documentElement.clientHeight,
+    document.documentElement.clientWidth
+  );
+
+  // scrolling
+  // s1coords.top gives viewport heihgt not page from top so we add rest oftop
+  //window.scrollTo(s1coords.left + scrollX, s1coords.top + scrollY);
+
+  // more better
+  // window.scrollTo({
+  //   left: s1coords.left + scrollX,
+  //   top: s1coords.top + scrollY,
+  //   behavior: 'smooth',
+  // });
+
+  // even more better way
+  // doesnt work in other browsers
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
